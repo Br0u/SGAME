@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>圭尔夫屁王的人生冒险</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-header">
+        <h1>圭尔夫屁王的人生冒险</h1>
+      </div>
+
+      <div class="character-info hidden" id="character-info">
+        <div class="character-image">
+          <img id="character-pic" src="pic/WechatIMG156.jpg" alt="屁王形象" />
+        </div>
+        <div class="character-details">
+          <h2>角色信息</h2>
+          <p><strong>姓名：</strong>槑</p>
+          <p><strong>性别：</strong>不详</p>
+          <p><strong>年龄：</strong>不详</p>
+          <p><strong>性格：</strong>幽默，嘴贱，冲动，容易emo，又容易高兴</p>
+          <p><strong>最爱食物：</strong>鸡公煲</p>
+          <p>
+            <strong>背景故事：</strong
+            >槑是圭尔夫大学的一名神秘人物，因为放屁技术高超而被称为"屁王"。没人知道槑的真实身份，有人说槑是教授，有人说是学生，还有人说是校园里的神秘访客。槑喜欢在校园里游荡，用独特的方式给人们带来欢乐和人生启示。
+          </p>
+        </div>
+        <button id="close-info">关闭</button>
+      </div>
+
+      <div class="game-content">
+        <div class="scene-container">
+          <img id="scene-image" src="pic/WechatIMG184.jpg" alt="场景图片" />
+          <div class="character-mood" id="character-mood"></div>
+        </div>
+
+        <div class="dialogue-box">
+          <div class="dialogue-header">
+            <span id="speaker-name">屁王</span>
+            <button id="show-info">查看角色信息</button>
+          </div>
+          <p id="dialogue-text">
+            你好！我是槑，人称"圭尔夫屁王"！准备好体验一段奇妙的人生旅程了吗？
+          </p>
+        </div>
+
+        <div class="choices-container" id="choices-container">
+          <button class="choice-btn" data-choice="start">开始冒险</button>
+          <button class="choice-btn" data-choice="info">了解更多关于我</button>
+        </div>
+      </div>
+
+      <div class="user-input-container hidden" id="user-input-container">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="输入你想说的话或行动..."
+        />
+        <button id="submit-input">发送</button>
+      </div>
+
+      <div class="game-footer">
+        <p>情绪值: <span id="emotion-meter">50</span>/100</p>
+        <div class="emotion-bar">
+          <div class="emotion-fill" id="emotion-fill" style="width: 50%"></div>
+        </div>
+        <p class="emotion-status" id="emotion-status">平静</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
